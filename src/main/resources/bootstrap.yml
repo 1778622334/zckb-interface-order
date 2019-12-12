@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      uri: http://localhost:8974/        #Config server的uri
+      profile: dev                       #指定的环境
+      label: master
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

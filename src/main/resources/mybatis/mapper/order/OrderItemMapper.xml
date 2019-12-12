@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gydata.zckb.zckbinterfaceorder.mapper.order.OrderItemMapper">
+  <resultMap id="BaseResultMap" type="cn.gydata.zckb.zckbinterfaceorder.entity.order.OrderItem">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="item_id" jdbcType="BIGINT" property="itemId" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="order_number" jdbcType="VARCHAR" property="orderNumber" />
+    <result column="order_status" jdbcType="TINYINT" property="orderStatus" />
+    <result column="format_id" jdbcType="BIGINT" property="formatId" />
+    <result column="buy_user_id" jdbcType="BIGINT" property="buyUserId" />
+    <result column="seller_id" jdbcType="BIGINT" property="sellerId" />
+    <result column="delivery_type" jdbcType="TINYINT" property="deliveryType" />
+    <result column="delivery_status" jdbcType="TINYINT" property="deliveryStatus" />
+    <result column="buyer_status" jdbcType="TINYINT" property="buyerStatus" />
+    <result column="goods_number" jdbcType="INTEGER" property="goodsNumber" />
+    <result column="goods_price" jdbcType="INTEGER" property="goodsPrice" />
+    <result column="goods_amount" jdbcType="INTEGER" property="goodsAmount" />
+    <result column="create_time" jdbcType="BIGINT" property="createTime" />
+    <result column="seller_finish_time" jdbcType="BIGINT" property="sellerFinishTime" />
+    <result column="buyer_finish_time" jdbcType="BIGINT" property="buyerFinishTime" />
+    <result column="method_id" jdbcType="INTEGER" property="methodId" />
+    <result column="update_time" jdbcType="BIGINT" property="updateTime" />
+    <result column="app_key" jdbcType="VARCHAR" property="appKey" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="order_pay_success_handle" jdbcType="VARCHAR" property="orderPaySuccessHandle" />
+    <result column="shop_snap_shot" jdbcType="VARCHAR" property="shopSnapShot" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    item_id, order_id, order_number, order_status, format_id, buy_user_id, seller_id, 
+    delivery_type, delivery_status, buyer_status, goods_number, goods_price, goods_amount, 
+    create_time, seller_finish_time, buyer_finish_time, method_id, update_time, app_key, 
+    is_delete, remark
+  </sql>
+</mapper>

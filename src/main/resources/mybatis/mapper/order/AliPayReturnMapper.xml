@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gydata.zckb.zckbinterfaceorder.mapper.order.AliPayReturnMapper">
+  <resultMap id="BaseResultMap" type="cn.gydata.zckb.zckbinterfaceorder.entity.order.AliPayReturn">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ali_pay_return_id" jdbcType="BIGINT" property="aliPayReturnId" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="msg" jdbcType="VARCHAR" property="msg" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="auth_app_id" jdbcType="VARCHAR" property="authAppId" />
+    <result column="out_trade_no" jdbcType="VARCHAR" property="outTradeNo" />
+    <result column="total_amount" jdbcType="VARCHAR" property="totalAmount" />
+    <result column="trade_no" jdbcType="VARCHAR" property="tradeNo" />
+    <result column="seller_id" jdbcType="VARCHAR" property="sellerId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ali_pay_return_id, code, msg, app_id, auth_app_id, out_trade_no, total_amount, trade_no, 
+    seller_id
+  </sql>
+</mapper>
